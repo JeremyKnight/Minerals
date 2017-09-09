@@ -1,0 +1,30 @@
+body{ 
+	background-color: lightBlue;
+}
+
+p {
+	font-size: 100%;
+	color: white;
+	/*display: none; */
+}
+
+img {
+	display: none;
+}
+
+#q1 {
+	font-size: 150%;
+}
+
+#next {
+	font-size: 150%;
+	border-style: solid;
+}
+#ani {
+	text-align: right;
+	margin-top: -250px;
+	margin-right: 200px;
+	font-size: 200%;
+	opacity: 0.0;
+}
+
