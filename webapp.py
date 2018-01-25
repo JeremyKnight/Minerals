@@ -15,3 +15,6 @@ app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.
 @app.route('/')
 def renderMain():
     return render_template('home.html')
+
+if __name__=="__main__":
+    app.run(debug=True)
