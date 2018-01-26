@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 
+	 <link rel="stylesheet"  type="text/css" href="static/StyleM.css"> 
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <script src="static/ScriptM.js"></script>
+ 
+ <title>{% block title %}{% endblock %}</title>
+ 
+ </head>
+ 
+ <body>
+   <h1>Minerals</h1>
+   {% block content %}{% endblock %}
+   {% if 'firstName' in session %} 
+   First Name: {{ session['firstName'] }}<br>
+ {% endif %}
+
+ {% if 'lastName' in session %} 
+   Last Name: {{ session['lastName'] }}<br>
+ {% endif %}
+
+ {% if 'favoriteColor' in session %} 
+   Favorite Color: {{ session['favoriteColor'] }}<br>
+ {% endif %}
+   </body>
+ 
+</html>
+
+
+
+
