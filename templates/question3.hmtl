@@ -3,7 +3,7 @@
 {% block content %}
 
 
-   <h1>Minerals</h1>
+   <h1>Question 3</h1>
    
    <!--question 1-->
     <p id="q1">
