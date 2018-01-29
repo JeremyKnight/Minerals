@@ -16,23 +16,23 @@ app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.
 def renderMain():
     return render_template('home.html')
   
-@app.route('q1')
+@app.route('/q1')
 def renderMain():
     return render_template('question1.html')
   
-@app.route('q2')
+@app.route('/q2')
 def renderMain():
     return render_template('question2.html')
 
-@app.route('q3')
+@app.route('/q3')
 def renderMain():
     return render_template('question3.html')
   
-@app.route('q4')
+@app.route('/q4')
 def renderMain():
     return render_template('question4.html')
 
-@app.route('q5')
+@app.route('/q5')
 def renderMain():
     return render_template('question5.html')
 
