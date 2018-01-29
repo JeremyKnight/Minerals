@@ -6,7 +6,7 @@
    <h1>Question 3</h1>
    
    <!--question 1-->
-    <p id="q1">
+    <p id="q2">
     A mineral fizzes when a weak acid is dropped on it, the mineral is probably
    </p>
    
@@ -34,13 +34,6 @@
    		Correct!
    	</p>
     
-<form action={{ url_for("home") }} method = "POST">
-  First name:<br>
-  <input type="text" name="firstName">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastName">
-  <input type="submit" value="Submit">
- </form> 
+
    
 {% endblock %}
