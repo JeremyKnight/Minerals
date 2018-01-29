@@ -17,23 +17,23 @@ def renderMain():
     return render_template('home.html')
   
 @app.route('/q1')
-def renderMain():
+def renderQuestion1():
     return render_template('question1.html')
   
 @app.route('/q2')
-def renderMain():
+def renderQuestion2():
     return render_template('question2.html')
 
 @app.route('/q3')
-def renderMain():
+def renderQuestion3():
     return render_template('question3.html')
   
 @app.route('/q4')
-def renderMain():
+def renderQuestion4():
     return render_template('question4.html')
 
 @app.route('/q5')
-def renderMain():
+def renderQuestion5():
     return render_template('question5.html')
 
 if __name__=="__main__":
