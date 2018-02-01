@@ -4,36 +4,20 @@
 
 
    <h1>Question 3</h1>
-   
+ <form action={{ url_for("renderQuestion4") }} method = "POST">
+  Answer:<br>
+  <input type="text" name="A3">
+  <input type="submit" value="Submit">
    <!--question 1-->
     <p id="q3">
-    A mineral fizzes when a weak acid is dropped on it, the mineral is probably
+     A mineral fizzes when a weak acid is dropped on it, the mineral is probably
    </p>
    
-   <p id="a"  input type = "radioButton">
-    Halite
-   </p>
+   <input id="a" type="radio" name="gender" value="Halite" checked> Halite<br>
+   <input id="b" type="radio" name="gender" value="Magnetite" checked> Magnetite<br>
+   <input id="c" type="radio" name="gender" value="Calcite" checked> Calcite<br>
+   <input id="d" type="radio" name="gender" value="Quartz" checked> Quartz<br>  
+ </form> 
    
-   <p id="b"  input type = "radioButton">
-    Magnetite
-   </p>
-   
-   <p id="c"  input type = "radioButton">
-    Calcite
-   </p>
-   
-   <p id="d"  input type = "radioButton">
-    Quartz
-   </p>
-   
-   <p id="next"  input type = "radioButton">
-   	Next
-   	</p>
-   	
-   	<p id="ani" >
-   		Correct!
-   	</p>
-    
 
-   
 {% endblock %}

@@ -4,35 +4,21 @@
 
 
    <h1>Question 4</h1>
-   
+ <form action={{ url_for("renderQuestion5") }} method = "POST">
+  Answer:<br>
+  <input type="text" name="A4">
+  <input type="submit" value="Submit">
    <!--question 1-->
     <p id="q3">
     Which of the following is is the least hardest based on Moh's test?
    </p>
-   
-   <p id="a"  input type = "radioButton">
-    Apatite
-   </p>
-   
-   <p id="b"  input type = "radioButton">
-    Talc
-   </p>
-   
-   <p id="c"  input type = "radioButton">
-    Gypsum
-   </p>
-   
-   <p id="d"  input type = "radioButton">
-    Diamond
-   </p>
-   
-   <p id="next"  input type = "radioButton">
-   	Next
-   	</p>
-   	
-   	<p id="ani" >
-   		Correct!
-   	</p>
+   	   
+   <input id="a" type="radio" name="gender" value="Apatite" checked> Apatite<br>
+   <input id="b" type="radio" name="gender" value="Talc" checked> Talc<br>
+   <input id="c" type="radio" name="gender" value="Gypsum" checked> Gypsum<br>
+   <input id="d" type="radio" name="gender" value="Diamond" checked> Diamond<br>
+ </form>  
+
 
 {% endblock %}
 

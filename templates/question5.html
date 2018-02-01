@@ -4,35 +4,21 @@
 
 
    <h1>Question 5</h1>
-   
-   <!--question 1-->
+ <form action={{ url_for("renderAnswer") }} method = "POST">
+  Answer:<br>
+  <input type="text" name="A5">
+  <input type="submit" value="Submit">
     <p id="q5">
     Hardness is a property that helps identify minerals. Scientists use a scale of 1-10 to show the hardness of a mineral. What number would be given to the hardest?
    </p>
    
-   <p id="a"  input type = "radioButton">
-    5
-   </p>
-   
-   <p id="b"  input type = "radioButton">
-    1
-   </p>
-   
-   <p id="c"  input type = "radioButton">
-    10
-   </p>
-   
-   <p id="d"  input type = "radioButton">
-    0
-   </p>
-   
-   <p id="next"  input type = "radioButton">
-   	Next
-   	</p>
-   	
-   	<p id="ani" >
-   		Correct!
-   	</p>
+
+   <input id="a" type="radio" name="gender" value="5" checked> 5<br>
+   <input id="b" type="radio" name="gender" value="1" checked> 1<br>
+   <input id="c" type="radio" name="gender" value="10" checked> 10<br>
+   <input id="d" type="radio" name="gender" value="0" checked> 0<br>
+ </form>
+
     
 <!---form action={{ url_for("home") }} method = "POST">
   First name:<br>

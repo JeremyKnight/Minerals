@@ -4,43 +4,20 @@
 
 
    <h1>Question 2</h1>
-   
+ <form action={{ url_for("renderQuestion3") }} method = "POST">
+  Answer:<br>
+  <input type="text" name="A2">
+  <input type="submit" value="Submit">
    <!--question 1-->
     <p id="q2">
     Which of the following is considered a special property that applies to only a few minerals?
    </p>
    
-   <p id="a"  input type = "radioButton">
-    Color
-   </p>
+   <input id="a" type="radio" name="gender" value="Color" checked> Color<br>
+   <input id="b" type="radio" name="gender" value="Luster" checked> Luster<br>
+   <input id="c" type="radio" name="gender" value="Steak" checked> Steak<br>
+   <input id="d" type="radio" name="gender" value="Magnetism" checked> Magnetism<br>
+ </form> 
    
-   <p id="b"  input type = "radioButton">
-    Luster
-   </p>
-   
-   <p id="c"  input type = "radioButton">
-    Streak
-   </p>
-   
-   <p id="d"  input type = "radioButton">
-    Magnetism
-   </p>
-   
-   <p id="next"  input type = "radioButton">
-   	Next
-   	</p>
-   	
-   	<p id="ani" >
-   		Correct!
-   	</p>
-    
-<!---form action={{ url_for("home") }} method = "POST">
-  First name:<br>
-  <input type="text" name="firstName">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastName">
-  <input type="submit" value="Submit">
- </form--> 
-   
+
 {% endblock %}
