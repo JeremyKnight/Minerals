@@ -2,21 +2,21 @@
 {% block title %}Mineral Quiz{% endblock %}
 {% block content %}
 
-
-   <h1>Question 3</h1>
- <form action={{ url_for("renderQuestion4") }} method = "POST">
-  Answer:<br>
-  <input type="text" name="A3">
-  <input type="submit" value="Submit">
-   <!--question 1-->
     <p id="q3">
      A mineral fizzes when a weak acid is dropped on it, the mineral is probably
    </p>
    
-   <input id="a" type="radio" name="gender" value="Halite" checked> Halite<br>
-   <input id="b" type="radio" name="gender" value="Magnetite" checked> Magnetite<br>
-   <input id="c" type="radio" name="gender" value="Calcite" checked> Calcite<br>
-   <input id="d" type="radio" name="gender" value="Quartz" checked> Quartz<br>  
+   <h1>Question 3</h1>
+ <form action="/q4"method = "POST">
+  Answer:<br>
+
+   <!--question 1-->
+
+   <input id="a" type="radio" name="c" value="Halite" > Halite<br>
+   <input id="b" type="radio" name="c" value="Magnetite" > Magnetite<br>
+   <input id="c" type="radio" name="c" value="Calcite" > Calcite<br>
+   <input id="d" type="radio" name="c" value="Quartz" > Quartz<br>  
+   <input type="submit">
  </form> 
    
 

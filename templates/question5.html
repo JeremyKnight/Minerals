@@ -2,32 +2,23 @@
 {% block title %}Mineral Quiz{% endblock %}
 {% block content %}
 
-
-   <h1>Question 5</h1>
- <form action={{ url_for("renderAnswer") }} method = "POST">
-  Answer:<br>
-  <input type="text" name="A5">
-  <input type="submit" value="Submit">
-    <p id="q5">
+   <p id="q5">
     Hardness is a property that helps identify minerals. Scientists use a scale of 1-10 to show the hardness of a mineral. What number would be given to the hardest?
    </p>
+   <h1>Question 5</h1>
+ <form action="/f1" method = "POST">
+  Answer:<br>
+
+ 
    
 
-   <input id="a" type="radio" name="gender" value="5" checked> 5<br>
-   <input id="b" type="radio" name="gender" value="1" checked> 1<br>
-   <input id="c" type="radio" name="gender" value="10" checked> 10<br>
-   <input id="d" type="radio" name="gender" value="0" checked> 0<br>
+   <input id="a" type="radio" name="e" value="5" > 5<br>
+   <input id="b" type="radio" name="e" value="1" > 1<br>
+   <input id="c" type="radio" name="e" value="10" > 10<br>
+   <input id="d" type="radio" name="e" value="0" > 0<br>
+   <input type="submit">
  </form>
 
-    
-<!---form action={{ url_for("home") }} method = "POST">
-  First name:<br>
-  <input type="text" name="firstName">
-  <br>
-  Last name:<br>
-  <input type="text" name="lastName">
-  <input type="submit" value="Submit">
- </form--> 
-   
+
 {% endblock %}
 

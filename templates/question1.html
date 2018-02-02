@@ -2,22 +2,21 @@
 {% block title %}Mineral Quiz{% endblock %}
 {% block content %}
 
-
-   <h1>Question 1</h1>
-   
-   <form action={{ url_for("renderQuestion2") }} method = "POST">
-  Answer:<br>
-  <input type="text" name="A1">
-  <input type="submit" value="Submit">
-
-   <!--question 1-->
     <p id="q1">
     What is one of the most common minerals in the world?
    </p>
-   <input id="a" type="radio" name="gender" value="Quartz" checked> Quartz<br>
-   <input id="b" type="radio" name="gender" value="Granite" checked> Granite<br>
-   <input id="c" type="radio" name="gender" value="Emerald" checked> Emerald<br>
-   <input id="d" type="radio" name="gender" value="Brockite" checked> Brockite<br>
+   <h1>Question 1</h1>
+   
+   <form action="/q2" method = "POST">
+  Answer:<br>
+
+   <!--question 1-->
+
+   <input id="a" type="radio" name="a" value="Quartz" > Quartz<br>
+   <input id="b" type="radio" name="a" value="Granite" > Granite<br>
+   <input id="c" type="radio" name="a" value="Emerald" > Emerald<br>
+   <input id="d" type="radio" name="a" value="Brockite" > Brockite<br>
+   <input type="submit">
  </form> 
 
 

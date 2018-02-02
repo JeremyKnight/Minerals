@@ -2,21 +2,21 @@
 {% block title %}Mineral Quiz{% endblock %}
 {% block content %}
 
-
-   <h1>Question 2</h1>
- <form action={{ url_for("renderQuestion3") }} method = "POST">
-  Answer:<br>
-  <input type="text" name="A2">
-  <input type="submit" value="Submit">
-   <!--question 1-->
     <p id="q2">
     Which of the following is considered a special property that applies to only a few minerals?
    </p>
+   <h1>Question 2</h1>
+ <form action = "/q3" method = "POST">
+  Answer:<br>
+ 
+   <!--question 1-->
+
    
-   <input id="a" type="radio" name="gender" value="Color" checked> Color<br>
-   <input id="b" type="radio" name="gender" value="Luster" checked> Luster<br>
-   <input id="c" type="radio" name="gender" value="Steak" checked> Steak<br>
-   <input id="d" type="radio" name="gender" value="Magnetism" checked> Magnetism<br>
+   <input id="a" type="radio" name="b" value="Color" > Color<br>
+   <input id="b" type="radio" name="b" value="Luster" > Luster<br>
+   <input id="c" type="radio" name="b" value="Steak" > Steak<br>
+   <input id="d" type="radio" name="b" value="Magnetism" > Magnetism<br>
+   <input type="submit">
  </form> 
    
 

@@ -2,21 +2,19 @@
 {% block title %}Mineral Quiz{% endblock %}
 {% block content %}
 
-
-   <h1>Question 4</h1>
- <form action={{ url_for("renderQuestion5") }} method = "POST">
-  Answer:<br>
-  <input type="text" name="A4">
-  <input type="submit" value="Submit">
-   <!--question 1-->
-    <p id="q3">
+    <p id="q4">
     Which of the following is is the least hardest based on Moh's test?
    </p>
+   <h1>Question 4</h1>
+ <form action="/q5" method = "POST">
+  Answer:<br>
+
    	   
-   <input id="a" type="radio" name="gender" value="Apatite" checked> Apatite<br>
-   <input id="b" type="radio" name="gender" value="Talc" checked> Talc<br>
-   <input id="c" type="radio" name="gender" value="Gypsum" checked> Gypsum<br>
-   <input id="d" type="radio" name="gender" value="Diamond" checked> Diamond<br>
+   <input id="a" type="radio" name="d" value="Apatite" > Apatite<br>
+   <input id="b" type="radio" name="d" value="Talc" > Talc<br>
+   <input id="c" type="radio" name="d" value="Gypsum" > Gypsum<br>
+   <input id="d" type="radio" name="d" value="Diamond" > Diamond<br>
+   <input type="submit">
  </form>  
 
 
