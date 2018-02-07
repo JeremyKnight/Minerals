@@ -14,9 +14,10 @@ app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.
 
 @app.route('/')
 def renderMain():
-    return render_template('home.html')
     session['correct'] = 0
-   
+    print(session['correct'])
+    return render_template('home.html')
+
 
 @app.route('/startOver')
 def startOver():
@@ -49,7 +50,8 @@ def renderQuestion5():
         session['correct'] += 1 
 @app.route('/f1',methods=['GET','POST'])
 def renderAnswer():
-    print(session)
+    for key in session:
+        print(session[key])
     return render_template('final.html', correct = session['correct'] )
     
     
