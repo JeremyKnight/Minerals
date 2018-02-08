@@ -26,30 +26,35 @@ def startOver():
 @app.route('/q1',methods=['GET','POST'])
 def renderQuestion1():
     return render_template('question1.html')
-    if 'Quartz' == request.form["a"]:
-        session['correct'] += 1 
+
 @app.route('/q2',methods=['GET','POST'])
 def renderQuestion2():
+    if 'Quartz' == request.form["a"]:
+        session['correct'] += 1 
     return render_template('question2.html')
-    if 'Color' == request.form["b"]:
-        session['correct'] += 1  
+ 
 @app.route('/q3',methods=['GET','POST'])
 def renderQuestion3():
-    return render_template('question3.html')
-    if 'Halite' == request.form["c"]:
+    if 'Color' == request.form["b"]:
         session['correct'] += 1 
+    return render_template('question3.html')
+
 @app.route('/q4',methods=['GET','POST'])
 def renderQuestion4():
+    if 'Halite' == request.form["c"]:
+        session['correct'] += 1     
     return render_template('question4.html')
-    if 'Apatite' == request.form["d"]:
-        session['correct'] += 1 
+
 @app.route('/q5',methods=['GET','POST'])
 def renderQuestion5():
-    return render_template('question5.html')
-    if '5' == request.form["e"]:
+    if 'Apatite' == request.form["d"]:
         session['correct'] += 1 
+    return render_template('question5.html')
+
 @app.route('/f1',methods=['GET','POST'])
 def renderAnswer():
+    if '5' == request.form["e"]:
+        session['correct'] += 1     
     for key in session:
         print(session[key])
     return render_template('final.html', correct = session['correct'] )
